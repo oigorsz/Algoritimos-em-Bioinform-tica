@@ -1,0 +1,19 @@
+1 - Importar o arquivo fasta  , o qual pode ter mais de uma sequência de nucleotídeos
+  Crie uma estrutura de dicionário para armazenar o nome e a sequência
+  Crie uma lista para armazenar os dicionários
+
+  Leia cada linha do arquivo fasta.  
+    Se a linha começar com '>' isso indica que será feita a leitura de um novo nucleotídeos
+      Se o dicionário já estiver preenchido com informações de outra sequência e alguma sequência já tiver sido lida então
+        Faça um loop que verifique cada letra da sequência e faça a contagem de A, C, G, T e do total e os insira no dicionário.
+        Após o dicionário estar totalmente preenchido, insira-o no vetor de dicionários
+      Se não, crie uma nova estrutura de dicionário com nome e sequencia vazios
+    Se a linha não começar com '>', então basta adicionar a linha na sequencia do dicionário.
+
+    Caso o arquivo fasta só possua uma sequência ou então a última sequência já estiver inserida no dicionário então
+        Faça um loop que verifique cada letra da sequência e faça a contagem de A, C, G, T e do total e os insira no dicionário.
+        Após o dicionário estar totalmente preenchido, insira-o no vetor de dicionários
+
+
+2 - Para exportar a lista de dicionário, crie um arquivo.txt de saída.
+    adicione o texto desejado no arquivo de saída contendo as informações de cada item da lista.

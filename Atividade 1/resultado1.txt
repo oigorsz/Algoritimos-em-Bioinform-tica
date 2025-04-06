@@ -1,0 +1,13 @@
+Resultado:
+
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+
+Solução
+-------------------
+Nome do gene: teste Atividade 1
+A: 20
+C: 12
+G: 17
+T: 21
+Total: 70 nucleotídeos
+
