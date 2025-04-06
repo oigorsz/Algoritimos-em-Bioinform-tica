@@ -1,0 +1,38 @@
+Problema:
+
+Uma string  é simplesmente uma coleção de símbolos selecionados de um alfabeto e transformado numa palavra. O comprimento da string é o número de símbolos que ela contém.
+Um exemplo de string DNA com comprimento 18 cujo alfabeto contêm os símbolos  'A', 'C', 'G', 'T') é  "ATGCTTCAGAAAGGTCTT."
+
+Dado:
+Arquivo: teste1.fasta
+
+Conte no. de A, T, C e G e total.
+Imprima o resultado em arquivo txt informando o nome do gene (1a. linha do cabeçalho do arquivo fasta).
+
+NÃO UTILIZAR BIBLIOTECA BIOPYTHON!!!!! utilizaremos na próxima atividade.
+
+Submeta:
+
+A) Algoritmo (explicando como importar arquivo fasta teste1.fasta., manipulação dos dados, e gravar o arquivos de saída (Obs.: não é pseudo código)
+
+B) Programa/Código Python
+
+C) Resultado (Gerar um arquivo de saída no formato txt)
+
+Submeter itens A, B e C
+.
+
+------------------------------------------------------------------------
+
+Resultado:
+
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+
+Solução
+-------------------
+Nome do gene: teste Atividade 1 
+A: 20
+C: 12
+G: 17
+T: 21
+Total: 70 nucleotídeos
