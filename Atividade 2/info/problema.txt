@@ -1,0 +1,19 @@
+Atividade 2 - Importar sequência de DNA no Fasta e contabilizar nucleotídeos A, T , C e G  e total. Utilizar biblioteca Biopython.
+
+1- Importar os aquivos Fasta do E.Coli Sakai: Genoma completo, Plasmídio 1 e Plasmídio 2
+       Utilizar a importação de dados FASTA utilizando a biblioteca Biopython 
+       Entender a estrutura da variável que armazena o arquivo Fasta
+
+2 - Contabilizar número de A, C, T e G e total:
+     Utilizando dados importados como FASTA
+
+3 - Criar arquivo texto de saída onde dados contabilizados serão impressos em formato csv para abrir em planilha. 
+     Fazer um arquivos de saída separados para o Genoma completo, Plasmídio 1 e Plasmídio 2    
+                1a. linha: dados do genoma
+                2a. linha: A, C, G, T, total
+                3a. linha: número de nucleotídeos de cada tipo
+4 - Perguntas:
+          - O que diferencia a E.Coli cepa SAKAI das dmeais?
+          - Plasmídeo. O que é? Qual sua função em bactérias? Aplicação prática?
+
+4 - Enviar: A) Código; B) Arquivo criado com saída das contagens; C) Respostas as perguntas do item 4 (Não há algoritmo neste exercício).

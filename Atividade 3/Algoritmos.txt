@@ -1,0 +1,70 @@
+
+
+A) Algoritmo - Narrativa Descritiva
+
+Este algoritmo realiza a análise de sequências genéticas contidas no arquivo FASTA denominado 'Ecoli_Sakai_cds_from_genomic.fna', que contém as sequências codificadoras do genoma da bactéria Escherichia coli (cepa Sakai). O propósito é calcular, para cada sequência, a quantidade de nucleotídeos A (adenina), T (timina), C (citosina) e G (guanina), bem como determinar o conteúdo GC (%) e a Temperatura de Melting (Tm) associada a cada sequência.
+
+Conteúdo GC (%) : refere-se à porcentagem de bases nitrogenadas guanina (G) e citosina (C) presentes em relação ao total de nucleotídeos da sequência. Esse índice é importante porque o par G-C é mais estável termicamente que o par A-T, pois forma três ligações de hidrogênio em vez de duas.
+
+Temperatura de Melting (Tm) : é a temperatura na qual metade das moléculas de DNA de fita dupla tornam-se fita simples, rompendo suas ligações de hidrogênio. É diretamente influenciada pela proporção de pares G-C na sequência.
+
+O algoritmo realiza os seguintes passos:
+
+1. Importa as bibliotecas necessárias para manipulação de arquivos FASTA, gráficos e arquivos CSV.
+2. Lê o arquivo FASTA contendo as sequências codificadoras da Escherichia coli (cepa Sakai).
+3. Para cada sequência:
+   - Conta a quantidade de nucleotídeos A, T, C e G.
+   - Calcula o conteúdo GC (%) com base na quantidade de C e G presentes.
+   - Calcula a Temperatura de Melting (Tm) com uma fórmula baseada no conteúdo GC e no comprimento da sequência.
+4. Armazena os resultados em objetos da lista `lista`.
+5. Gera três arquivos CSV:
+   - Um com as contagens de nucleotídeos e tamanho total de cada sequência.
+   - Um com o conteúdo GC (%) de cada sequência.
+   - Um com os valores de Tm e GC (%) para posterior análise gráfica.
+6. Gera um gráfico de dispersão relacionando o conteúdo GC (%) com a Temperatura de Melting (Tm) de cada sequência.
+7. Salva o gráfico em arquivo PNG.
+
+Esse procedimento permite analisar as características térmicas e composicionais do genoma da Escherichia coli Sakai, importante para estudos de estabilidade genética, evolução, desenho de primers e biotecnologia.
+
+
+B) Algoritmo - Pseudocódigo
+
+Início
+    Importar bibliotecas para leitura FASTA, manipulação CSV e geração de gráficos
+
+    Definir função contar(seq)
+        Inicializar contadores de A, T, C, G e total
+        Para cada letra na sequência
+            Se for 'A', incrementar contador de A
+            Se for 'T', incrementar contador de T
+            Se for 'C', incrementar contador de C
+            Se for 'G', incrementar contador de G
+            Incrementar total
+        Calcular conteúdo GC como ((G + C) / total) * 100
+        Calcular Tm com a fórmula: 64.9 + 0.41 * GC - (500 / total)
+        Retornar os valores de contagem, GC e Tm
+
+    Definir função geraGrafico(lista)
+        Criar listas de valores de GC e Tm a partir de lista
+        Plotar gráfico de dispersão de Tm x GC
+        Configurar rótulos e título
+        Salvar imagem PNG
+        Exibir gráfico na tela
+
+    Definir arquivo FASTA de entrada
+    Criar lista vazia para armazenar resultados
+
+    Para cada sequência no arquivo FASTA
+        Chamar função contar para a sequência
+        Atribuir os valores calculados ao objeto sequência
+        Adicionar sequência à lista
+
+    Verificar se diretório de saída existe, se não existir, criar
+
+    Escrever CSV com contagens de nucleotídeos e total
+    Escrever CSV com conteúdo GC (%)
+    Escrever CSV com Tm e GC para análise gráfica
+
+    Chamar função geraGrafico com a lista
+
+Fim

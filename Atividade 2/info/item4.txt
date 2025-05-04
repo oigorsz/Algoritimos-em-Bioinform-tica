@@ -1,0 +1,8 @@
+4 - Perguntas:
+          - O que diferencia a E.Coli cepa SAKAI das dmeais?
+          É uma cepa patogênica associada ao surto de intoxicação alimentar, 
+          problema recorrênte na sociedade associado ao consumo de alimentos contaminados.
+
+          - Plasmídeo. O que é? Qual sua função em bactérias? Aplicação prática?
+          O Plasmídeo é o DNA extracromossômico, responsável por carregar genes acessórios, ou seja, aqueles que possuem resistência a antibióticos,
+          Uma aplicação prática é sua utilização em engenharia genética para produção de proteínas, como a insulina.
