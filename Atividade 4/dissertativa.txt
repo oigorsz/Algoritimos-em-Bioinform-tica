@@ -1,0 +1,13 @@
+A) As sequências DNA que estamos convertendo em sequências de aminoácidos são, em inglês, "Open reading frame" . 
+Se sim ou não, justifique. 
+
+Não, pois as sequências que estamos convertendo são possíveis frames de leitura, 
+mas nem todas são Open Reading Frames (ORFs).
+Um ORF é uma sequência contínua sem códons de parada (*) até o final, começando normalmente com um códon de início (AUG) 
+e terminando com um códon de parada. Aqui, estamos traduzindo todas as possibilidades sem selecionar as verdadeiras ORFs.
+
+B) Qual a razão para ler os 6 Frames de uma sequência? O que estamos procurando?
+
+Porque uma mesma sequência de DNA pode ter até 6 frames de leitura possíveis (3 na fita direta e 3 na complementar reversa).
+Estamos procurando possíveis sequências codificantes (ORFs), que podem começar em diferentes posições e direções. 
+Traduzir os 6 frames permite identificar qual (ou quais) deles contém sequências válidas de proteínas.
